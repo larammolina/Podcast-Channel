@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #FFFFFF;
+    height: 44px;
+}
+
+.logo {
+    height: 24px;    
+    width: 24px;    
+    margin-left: 16px;
+}
+/* inicio menu hamburguesa */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+  
+li {
+    list-style: none;
+    font-size: 16px;
+    margin: 8px;
+}
+  
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_wrapper {
+    padding: 1em 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+  
+.burger, .logo, .cruz {
+    margin: 0 1em;
+}
+
+.burger {
+    position: absolute;
+    right: 0;
+}
+
+input{
+    display: inline-block;    
+    position: absolute;    
+    top: 22px;    
+    right: 17px;   
+    opacity: 0;
+}
+
+.cruz{
+    display: none;
+}
+
+#toggle:checked + .drop-menu {
+    display: flex;
+    height: 224px;
+
+}
+
+.drop-menu {
+    background: blue;
+    color: white;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    opacity: 50;
+}
+
+.drop-menu li {
+    padding: .5em;
+}
+
+/* fin de menu hamburguesa */
+
+.dot {
+color: black;
+}
+
+h1, h2 {
+    color: #060A24;
+    font-size: 36px;
+    padding-top: 29px;
+    font-weight: bolder;
+    text-align: left;
+}
+h1{
+    padding-left: 16px;
+}
+h2{
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+h1, h2, .box h4, li{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+footer, p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+p {
+    font-size: 14px;
+    padding: 0px 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.padreBoton1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.padreBoton2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.boton {
+    background-color:#00F3BB ;
+    width: 288px;
+    height: 48px;
+    padding: 13px 10px;
+    font-size: 14px;
+    margin: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.boton:hover{
+    background: linear-gradient(to left, #0000FE, #00F0B8);
+    color: white;
+}
+
+.episodios {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+
+iframe {
+    border: black;
+}
+
+.fondoAzul {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 950px;
+    background-image: linear-gradient(#0000FF, #0000A3); 
+    transform: skewY(-6deg);
+    /*transform-origin: bottom right;*/    
+}
+
+.tamanio {
+    width: 320px;
+    height: 300px;
+    transform-origin: top right;
+}
+
+.podcasts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.episodios h2{
+    color: white;
+    position: relative;
+    margin: 10px;
+}
+
+
+.episodios .podcasts iframe{
+    margin: 10px;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+}
+
+.deDondeVenimos .phone img{
+    width: 360px;
+    height: 519px;
+    margin-left: 0px;
+    position: relative;
+    
+}
+
+.invitadas{
+    display: block;
+    text-align: center;
+}
+
+.invitadas img{
+    height: 243px;
+    width: 320px
+}
+
+.temas{
+    display: block;
+    text-align: center;
+}
+
+.temas .box {
+    margin: 20px;
+}
+
+.temas .box img {
+    width: 104px;
+    height: 104px;
+}
+
+.temas .box h4{
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.overflow{
+    overflow: hidden;
+    height: 341px;
+    position: relative;
+}
+.fondoAzul2{
+    background-image: linear-gradient(#0000FF, #0000A3);
+    transform: skewY(-6deg);
+    transform-origin: top right;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.novedades {
+  padding: 30px;
+}
+
+.novedades h2{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0;
+}
+
+footer, .emoticones{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h5{
+    margin: 15px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.emoticones{
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+
+i {
+    padding: 10px;
+    color: black;
+}
+
+i:active{
+    color: black;
+}
+
+@media screen and (min-width: 400px)  and (max-width: 599px) {
+
+    .novedades {
+        padding-top: 80px;
+    }
+    
+}
+
+@media screen and (min-width: 600px)  and (max-width: 1079px) {
+
+    .novedades {
+        padding-top: 80px;
+    }
+      
+    .novedades h2{
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1920px) {
+
+    .dot{
+        color: blue;
+    }
+    
+    header {
+        background: #FFFFFF;
+        height: 80px;
+        color: black;
+    }
+
+    .logo{
+        height: 34px;    
+        width: 34px;    
+        margin-left: 26px;
+    }
+
+    /*menu */
+
+    li, a {
+    color: black;
+    }
+
+    li:hover, a:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+        text-decoration-color: #00F3BB;
+    }
+
+    li:active, a:active {
+        color: black
+        text-decoration: line-through;
+    }
+
+    .drop-menu{
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        background-color: white;
+        list-style: none;
+        padding: 0px 28px;
+        display: flex;
+    }
+
+    nav, .drop-menu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav {
+        align-items: center;
+    }
+    
+    .burger {
+        display: none;
+    }
+
+    /*fin del menu */
+
+    h1 {
+        color: #060A24;
+        font-size: 64px;
+        padding-top: 29px;
+        font-weight: bolder;
+        text-align: left;
+    }
+    h1, h2, .padreBoton1, p{
+        padding-left: 250px;
+    }
+    h2{
+        text-align: left;
+        padding-bottom: 15px;
+        font-size: 48px;
+    }
+
+    .padreBoton1{
+        display:flex;
+        justify-content: left;
+        margin-bottom: 65px;
+    }
+
+    .fondoAzul {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 800px;
+        background-image: linear-gradient(#0000FF, #0000A3); 
+        transform: skewY(-6deg);  
+    }
+
+    .episodios {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    .episodios h2{
+        padding-left: 300px;
+        margin-top: 30px;
+    }
+
+    .podcasts {
+        display: grid;
+        grid-template-columns: 585px 585px;
+        grid-template-rows: 232px 232px;
+        row-gap: 30px;
+        column-gap: 50px;
+    }
+
+    .episodios h2{
+        color: white;
+        position: relative;
+        margin-top: 55px;
+    }
+
+    .episodios .podcasts iframe{
+        margin: 10px;
+        width: 584px;
+        height: 232px;
+    }
+
+    .deDondeVenimos{ 
+        display: inline-grid;
+        grid-template-columns: 700px 500px;
+        column-gap: 100px; 
+    
+    }
+
+    .deDondeVenimos .texto{
+       margin-top: 180px;
+    }
+
+    .deDondeVenimos .texto h2, .deDondeVenimos .texto p{
+        padding: 0px;
+        margin: 10px;
+        padding-left: 0px;
+    }
+
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .deDondeVenimos .phone img{
+        width: 360px;
+        height: 519px;
+        margin-left: 0px;
+        position: relative;
+        margin-top: 40px;
+    }
+    .invitadas{
+        position: relative;
+    }
+
+    .invitadas img{
+        height: 364px;
+        width: 480px
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+    
+    .box {
+        margin: 30px;
+        
+    }
+    
+    .temas .box img {
+        width: 104px;
+        height: 104px;
+        margin: 0px 22px;
+    }
+    
+    .temas .box h4{
+        font-weight: bolder;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .overflow{
+        overflow: hidden;
+        height: 518px;
+        position: relative;
+    }
+    .fondoAzul2{
+        background-image: linear-gradient(#0000FF, #0000A3);
+        transform: skewY(-6deg);
+        transform-origin: top right;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .novedades {
+        margin:100px;
+    }
+    
+    .novedades h2{
+        color: white;
+        font-size: 32px;
+        text-align: center;
+        padding-top: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .padreBoton2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+
+    footer{
+        margin: 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    
+    h5{
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    footer .emoticones i{
+        width: 18px;
+        height: 28px;
+        margin-left: 40px;
+
+    }
+}
